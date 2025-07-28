@@ -1,0 +1,94 @@
+<!-- File: index.html -->
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <!-- تعريف ترميز الأحرف كـ UTF-8 لدعم العربية -->
+  <meta charset="UTF-8">
+  <!-- ضبط مقياس العرض ليتناسب مع أبعاد شاشة الجهاز -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- عنوان الصفحة الذي يظهر في تبويب المتصفح -->
+  <title>اختباراتي - منصة الدروس والاختبارات</title>
+  <!-- ربط ملف CSS الخارجي لتنسيق عناصر الصفحة -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- بداية الترويسة (Header) التي تظهر بالجزء العلوي من التطبيق -->
+  <header>
+    <!-- العنوان الرئيسي للتطبيق -->
+    <h1>اختباراتي</h1>
+    <!-- وصف مختصر تحت العنوان يوضح وظيفة المنصة -->
+    <p>منصة تعليمية تضم الدروس والاختبارات</p>
+  </header>
+
+  <!-- بداية القسم الرئيسي للمحتوى -->
+  <main>
+    <!-- قسم عرض الوحدات الدراسية -->
+    <section id="units-container">
+      <!-- زر يمثل الوحدة 1 -->
+      <button class="unit-button" data-unit="1">الوحدة 1</button>
+      <!-- زر يمثل الوحدة 2 -->
+      <button class="unit-button" data-unit="2">الوحدة 2</button>
+      <!-- زر يمثل الوحدة 3 -->
+      <button class="unit-button" data-unit="3">الوحدة 3</button>
+      <!-- زر يمثل الوحدة 4 -->
+      <button class="unit-button" data-unit="4">الوحدة 4</button>
+      <!-- زر يمثل الوحدة 5 -->
+      <button class="unit-button" data-unit="5">الوحدة 5</button>
+      <!-- زر يمثل الوحدة 6 -->
+      <button class="unit-button" data-unit="6">الوحدة 6</button>
+      <!-- زر يمثل الوحدة 7 -->
+      <button class="unit-button" data-unit="7">الوحدة 7</button>
+      <!-- زر يمثل الوحدة 8 -->
+      <button class="unit-button" data-unit="8">الوحدة 8</button>
+      <!-- زر يمثل الوحدة 9 -->
+      <button class="unit-button" data-unit="9">الوحدة 9</button>
+      <!-- زر يمثل الوحدة 10 -->
+      <button class="unit-button" data-unit="10">الوحدة 10</button>
+      <!-- زر يمثل الوحدة 11 -->
+      <button class="unit-button" data-unit="11">الوحدة 11</button>
+      <!-- زر يمثل الوحدة 12 -->
+      <button class="unit-button" data-unit="12">الوحدة 12</button>
+    </section>
+
+    <!-- قسم عرض الدروس داخل الوحدة المختارة؛ مخفي بشكل افتراضي -->
+    <section id="lessons-container" class="hidden">
+      <!-- عنوان فرعي يظهر رقم الوحدة الحالية -->
+      <h2 id="lessons-title">دروس الوحدة</h2>
+      <!-- حاوية يتم ملؤها بأزرار الدروس عبر JavaScript -->
+      <div id="lessons-list"></div>
+    </section>
+  </main>
+
+  <!-- بداية التذييل (Footer) الذي يظهر في أسفل التطبيق -->
+  <footer>
+    <!-- شريط روابط وسائل التواصل الاجتماعي -->
+    <nav class="social-links">
+      <!-- رابط إلى إنستغرام -->
+      <a href="#" title="إنستغرام">
+        <img src="icons/instagram.svg" alt="إنستغرام">
+      </a>
+      <!-- رابط إلى فيسبوك -->
+      <a href="#" title="فيسبوك">
+        <img src="icons/facebook.svg" alt="فيسبوك">
+      </a>
+      <!-- رابط إلى يوتيوب -->
+      <a href="#" title="يوتيوب">
+        <img src="icons/youtube.svg" alt="يوتيوب">
+      </a>
+      <!-- رابط إلى تلغرام -->
+      <a href="#" title="تلغرام">
+        <img src="icons/telegram.svg" alt="تلغرام">
+      </a>
+      <!-- رابط إلى واتساب -->
+      <a href="#" title="واتساب">
+        <img src="icons/whatsapp.svg" alt="واتساب">
+      </a>
+    </nav>
+    <!-- نص حقوق النشر -->
+    <p>&copy; 2025 منصة الاختبارات التعليمية. جميع الحقوق محفوظة.</p>
+  </footer>
+
+  <!-- ربط ملف JavaScript الخارجي الذي يحوي منطق تفاعل الوحدات والدروس -->
+  <script defer src="script.js"></script>
+</body>
+</html>
